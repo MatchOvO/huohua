@@ -1,7 +1,7 @@
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';
 import type { FC } from 'react';
 
+import Logo1Icon from '../huohua/Logo1';
 import { authHeaderWrapper } from './share.css';
 
 export const AuthHeader: FC<{

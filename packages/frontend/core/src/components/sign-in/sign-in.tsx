@@ -130,7 +130,7 @@ export const SignInStep = ({
           }));
         } else {
           notify.error({
-            title: 'Failed to send email. Please contact the administrator.',
+            title: '发送邮件失败，请联系管理员',
           });
         }
       }
@@ -139,7 +139,7 @@ export const SignInStep = ({
 
       // TODO(@eyhn): better error handling
       notify.error({
-        title: 'Failed to sign in',
+        title: '登录失败',
         message: err.message,
       });
     }

@@ -1,9 +1,9 @@
 import { Button } from '@affine/component/ui/button';
 import { useI18n } from '@affine/i18n';
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import { useTheme } from 'next-themes';
 import { type ReactNode, useCallback } from 'react';
 
+import Logo1Icon from '../huohua/Logo1';
 import dotBgDark from './assets/dot-bg.dark.png';
 import dotBgLight from './assets/dot-bg.light.png';
 import { DesktopNavbar } from './desktop-navbar';

@@ -10,10 +10,11 @@ export const DesktopNavbar = () => {
         return (
           <a
             key={item.title}
-            href={item.path}
+            href={item.path || undefined}
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}
+            onClick={item.action || (() => {})}
           >
             {item.title}
           </a>
