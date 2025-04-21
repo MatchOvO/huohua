@@ -1,4 +1,4 @@
-import { Container, Img, Link, Row, Section } from '@react-email/components';
+import { Container, Row, Section } from '@react-email/components';
 import type { CSSProperties } from 'react';
 
 import { BasicTextStyle } from './common';

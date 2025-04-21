@@ -4,8 +4,6 @@ import {
   Container,
   Head,
   Html,
-  Img,
-  Link,
   Row,
   Section,
   Text as EmailText,

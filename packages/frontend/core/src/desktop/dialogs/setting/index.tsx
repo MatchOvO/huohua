@@ -135,13 +135,13 @@ const SettingModalInner = ({
   const [openIssueFeedbackModal, setOpenIssueFeedbackModal] = useState(false);
   const [openStarAFFiNEModal, setOpenStarAFFiNEModal] = useState(false);
 
-  const handleOpenIssueFeedbackModal = useCallback(() => {
-    setOpenIssueFeedbackModal(true);
-  }, [setOpenIssueFeedbackModal]);
+  // const handleOpenIssueFeedbackModal = useCallback(() => {
+  //   setOpenIssueFeedbackModal(true);
+  // }, [setOpenIssueFeedbackModal]);
 
-  const handleOpenStarAFFiNEModal = useCallback(() => {
-    setOpenStarAFFiNEModal(true);
-  }, [setOpenStarAFFiNEModal]);
+  // const handleOpenStarAFFiNEModal = useCallback(() => {
+  //   setOpenStarAFFiNEModal(true);
+  // }, [setOpenStarAFFiNEModal]);
 
   useEffect(() => {
     if (
