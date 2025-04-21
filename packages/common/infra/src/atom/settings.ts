@@ -32,7 +32,7 @@ const appSettingBaseAtom = atomWithStorage<AppSetting>(
     enableNoisyBackground: true,
     autoCheckUpdate: true,
     autoDownloadUpdate: true,
-    enableTelemetry: true,
+    enableTelemetry: false,
   },
   undefined,
   {

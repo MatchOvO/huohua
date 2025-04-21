@@ -21,12 +21,12 @@ export default function InvitationAccepted(props: InvitationAcceptedProps) {
   const { user, workspace, url } = props;
   return (
     <Template>
-      <Title>{user.email} accepted your invitation</Title>
+      <Title>{user.email} 接受了你的邀请</Title>
       <Content>
         <P>
-          <User {...user} /> has joined <Workspace {...workspace} />
+          <User {...user} /> 已经加入了 <Workspace {...workspace} />
         </P>
-        <Button href={url}>Open Workspace Members</Button>
+        <Button href={url}>打开管理成员面板</Button>
       </Content>
     </Template>
   );

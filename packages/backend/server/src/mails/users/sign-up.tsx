@@ -16,19 +16,14 @@ export type SignUpProps = {
 export default function SignUp(props: SignUpProps) {
   return (
     <Template>
-      <Title>Sign up to AFFiNE Cloud</Title>
+      <Title>注册 火花笔记</Title>
       <Content>
-        <P>You are signing up to AFFiNE. Here is your code:</P>
+        <P>你正在注册火花笔记。 以下是你的验证码:</P>
         <OnelineCodeBlock>{props.otp}</OnelineCodeBlock>
+        <P>你也可以通过以下链接完成 注册:</P>
+        <Button href={props.url}>注册链接</Button>
         <P>
-          Alternatively, you can sign up directly by clicking the magic link
-          below:
-        </P>
-        <Button href={props.url}>Sign up with Magic Link</Button>
-        <P>
-          <SecondaryText>
-            This code and link will expire in 30 minutes.
-          </SecondaryText>
+          <SecondaryText>验证码和注册链接会在三十分钟后过期。</SecondaryText>
         </P>
       </Content>
     </Template>

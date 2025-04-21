@@ -213,15 +213,7 @@ export function Template(props: PropsWithChildren) {
             padding: '24px',
           }}
         >
-          <Section>
-            <Link href="https://affine.pro">
-              <Img
-                src="https://cdn.affine.pro/mail/2023-8-9/affine-logo.png"
-                alt="AFFiNE logo"
-                height="32px"
-              />
-            </Link>
-          </Section>
+          <Section>火花笔记</Section>
           {content}
         </Container>
         <Footer />

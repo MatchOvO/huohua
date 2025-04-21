@@ -16,19 +16,14 @@ export type SignInProps = {
 export default function SignIn(props: SignInProps) {
   return (
     <Template>
-      <Title>Sign in to AFFiNE Cloud</Title>
+      <Title>登录 火花笔记</Title>
       <Content>
-        <P>You are signing in to AFFiNE. Here is your code:</P>
+        <P>你正在登录火花笔记。 以下是你的验证码:</P>
         <OnelineCodeBlock>{props.otp}</OnelineCodeBlock>
+        <P>你也可以通过以下链接进行 快速登录:</P>
+        <Button href={props.url}>登录链接</Button>
         <P>
-          Alternatively, you can sign in directly by clicking the magic link
-          below:
-        </P>
-        <Button href={props.url}>Sign in with Magic Link</Button>
-        <P>
-          <SecondaryText>
-            This code and link will expire in 30 minutes.
-          </SecondaryText>
+          <SecondaryText>验证码和登录链接会在三十分钟后过期。</SecondaryText>
         </P>
       </Content>
     </Template>

@@ -135,7 +135,7 @@ export const AboutAffine = () => {
           <OpenInNewIcon className="icon" />
         </a>
       </SettingWrapper>
-      <SettingWrapper title={t['com.affine.aboutAFFiNE.community.title']()}>
+      {/* <SettingWrapper title={t['com.affine.aboutAFFiNE.community.title']()}>
         <div className={styles.communityWrapper}>
           {relatedLinks.map(({ icon, title, link }) => {
             return (
@@ -152,8 +152,8 @@ export const AboutAffine = () => {
             );
           })}
         </div>
-      </SettingWrapper>
-      <SettingWrapper title={t['com.affine.aboutAFFiNE.legal.title']()}>
+      </SettingWrapper> */}
+      {/* <SettingWrapper title={t['com.affine.aboutAFFiNE.legal.title']()}>
         <a
           className={styles.link}
           rel="noreferrer"
@@ -172,7 +172,7 @@ export const AboutAffine = () => {
           {t['com.affine.aboutAFFiNE.legal.tos']()}
           <OpenInNewIcon className="icon" />
         </a>
-      </SettingWrapper>
+      </SettingWrapper> */}
     </>
   );
 };

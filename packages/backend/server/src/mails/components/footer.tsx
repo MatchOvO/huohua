@@ -22,45 +22,14 @@ export const Footer = () => {
         padding: '24px',
       }}
     >
-      <Section align="center" width="auto" style={{ margin: '1px auto' }}>
-        <Row>
-          {[
-            'Github',
-            'Twitter',
-            'Discord',
-            'Youtube',
-            'Telegram',
-            'Reddit',
-          ].map(platform => (
-            <td key={platform} style={{ padding: '0 10px' }}>
-              <Link href={`https://affine.pro/${platform.toLowerCase()}`}>
-                <Img
-                  src={`https://cdn.affine.pro/mail/2023-8-9/${platform}.png`}
-                  alt={`affine ${platform.toLowerCase()} link`}
-                  height="16px"
-                />
-              </Link>
-            </td>
-          ))}
+      <Section align="center" width="auto">
+        <Row style={TextStyles}>
+          <td>在使用过程中如遇到问题，联系火柴 - huochai@chenzs.com</td>
         </Row>
       </Section>
       <Section align="center" width="auto">
         <Row style={TextStyles}>
-          <td>One hyper-fused platform for wildly creative minds</td>
-        </Row>
-      </Section>
-      <Section align="center" width="auto">
-        <Row style={TextStyles}>
-          <td>Copyright</td>
-          <td>
-            <Img
-              src="https://cdn.affine.pro/mail/2023-8-9/copyright.png"
-              alt="copyright"
-              height="14px"
-              style={{ verticalAlign: 'middle', margin: '0 4px' }}
-            />
-          </td>
-          <td>2023-{new Date().getUTCFullYear()} ToEverything</td>
+          <td>火花笔记 - 灵感如火花，随处开花，随处画</td>
         </Row>
       </Section>
     </Container>

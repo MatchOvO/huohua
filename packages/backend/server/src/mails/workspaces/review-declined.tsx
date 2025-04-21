@@ -18,11 +18,10 @@ export default function LinkInvitationReviewDeclined(
   const { workspace } = props;
   return (
     <Template>
-      <Title>Request declined</Title>
+      <Title>请求被拒绝</Title>
       <Content>
         <P>
-          Your request to join <Workspace {...workspace} /> has been declined by
-          the workspace admin.
+          你加入 <Workspace {...workspace} /> 的请求已被 空间管理员拒绝
         </P>
       </Content>
     </Template>

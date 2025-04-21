@@ -21,11 +21,11 @@ export default function TeamBecomeCollaborator(
 
   return (
     <Template>
-      <Title>Role update in workspace</Title>
+      <Title>空间角色变更</Title>
       <Content>
         <P>
-          Your role in <Workspace {...workspace} /> has been changed to{' '}
-          collaborator. You can continue to collaborate in this workspace.
+          你在 <Workspace {...workspace} /> 的角色变更为 参与者。
+          你可以继续作为参与者参与空间。
         </P>
         <Button href={url}>Go to Workspace</Button>
       </Content>

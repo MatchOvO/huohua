@@ -22,13 +22,13 @@ export default function Invitation(props: InvitationProps) {
 
   return (
     <Template>
-      <Title>You are invited!</Title>
+      <Title>你被邀请了！</Title>
       <Content>
         <P>
-          <User {...user} /> invited you to join <Workspace {...workspace} />
+          <User {...user} /> 邀请你加入空间: <Workspace {...workspace} />
         </P>
-        <P>Click button to join this workspace</P>
-        <Button href={url}>Accept & Join</Button>
+        <P>点击下方按钮接收邀请:</P>
+        <Button href={url}>同意&加入</Button>
       </Content>
     </Template>
   );

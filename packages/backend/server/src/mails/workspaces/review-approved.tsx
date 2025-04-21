@@ -20,12 +20,11 @@ export default function LinkInvitationApproved(
   const { workspace, url } = props;
   return (
     <Template>
-      <Title>Welcome to the workspace!</Title>
+      <Title>欢迎加入空间！</Title>
       <Content>
         <P>
-          Your request to join <Workspace {...workspace} /> has been accepted.
-          You can now access the team workspace and collaborate with other
-          members.
+          你加入 <Workspace {...workspace} /> 的请求已被同意。
+          现在你可以与其他参与者一起访问此空间。
         </P>
       </Content>
       <Button href={url}>Open Workspace</Button>

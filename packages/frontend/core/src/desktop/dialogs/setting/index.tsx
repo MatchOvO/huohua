@@ -199,7 +199,8 @@ const SettingModalInner = ({
             </div>
             <div className={style.footer}>
               <ContactWithUsIcon fontSize={16} />
-              <Trans
+              使用遇到问题，联系火柴 - huochai@chenzs.com
+              {/* <Trans
                 i18nKey={'com.affine.settings.suggestion-2'}
                 components={{
                   1: (
@@ -215,7 +216,7 @@ const SettingModalInner = ({
                     />
                   ),
                 }}
-              />
+              /> */}
             </div>
             <StarAFFiNEModal
               open={openStarAFFiNEModal}

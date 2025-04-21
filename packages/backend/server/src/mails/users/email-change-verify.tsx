@@ -1,4 +1,4 @@
-import { Button, Content, P, Template, Title } from '../components';
+import { Bold,Button, Content, P, Template, Title } from '../components';
 
 export type VerifyChangeEmailProps = {
   url: string;
@@ -7,14 +7,17 @@ export type VerifyChangeEmailProps = {
 export default function VerifyChangeEmail(props: VerifyChangeEmailProps) {
   return (
     <Template>
-      <Title>Verify your new email address</Title>
+      <Title>验证你的新邮箱地址</Title>
       <Content>
         <P>
-          You recently requested to change the email address associated with
-          your AFFiNE account. To complete this process, please click on the
-          verification link below. This magic link will expire in 30 minutes.
+          你最近请求更改火花笔记账号的邮箱地址
+          <br />
+          点击以下链接以完成此步骤：
         </P>
-        <Button href={props.url}>Verify your new email address</Button>
+        <P>
+          链接会在 <Bold>30 分钟</Bold> 后过期.
+        </P>
+        <Button href={props.url}>验证新邮箱地址</Button>
       </Content>
     </Template>
   );

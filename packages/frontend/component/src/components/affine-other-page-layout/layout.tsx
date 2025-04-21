@@ -1,3 +1,4 @@
+import { useConfirmModal } from '@affine/component';
 import { Button } from '@affine/component/ui/button';
 import { useI18n } from '@affine/i18n';
 import { useTheme } from 'next-themes';
@@ -16,9 +17,20 @@ export const AffineOtherPageLayout = ({
   children: ReactNode;
 }) => {
   const t = useI18n();
+  const { openConfirmModal } = useConfirmModal();
 
   const openDownloadLink = useCallback(() => {
-    open(BUILD_CONFIG.downloadUrl, '_blank');
+    openConfirmModal({
+      confirmText: t['Confirm'](),
+      cancelText: t['Cancel'](),
+      title: t['tips'](),
+      children:
+        '火花笔记 APP 暂未上线，你可以下载 AFFiNE 官方APP接入火花Cloud，是否跳转下载？',
+      onConfirm: () => {
+        const url = `https://affine.pro/download?channel=stable`;
+        open(url, '_blank');
+      },
+    });
   }, []);
 
   const { resolvedTheme } = useTheme();
